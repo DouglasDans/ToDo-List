@@ -33,7 +33,9 @@ body{
     width: 250px;
     height: 100vh;
     border-right: 1px solid var(--color2);
-
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 2rem;
 
     display: flex;
@@ -84,4 +86,11 @@ body{
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis;
+}
+
+
+/* MAIN */
+.main-container{
+    margin-left: 250px;
+    width: calc(100% - 250px);
 }
