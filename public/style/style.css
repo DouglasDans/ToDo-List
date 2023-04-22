@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color1: #0B0C0E;
+    --color2: #101114;
+    --color3: #191B1F;
+    --color4: #24272D;
+    --color5: #30343B;
+    --color6: #40454F;
+    --color7: #505663;
+    --color8: #67707F;
+    --color9: #8C96A6;
+    --color10: #B5BDC9;
+    --color11: #DFE2E7;
+    --color12: #F3F4F6;
+    --purple: #7D39D3;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    color: var(--color12);
+}
+
+body{
+    background-color: var(--color1);
+}
+
+.sidebar-menu{
+    width: 250px;
+    height: 100vh;
+    border-right: 1px solid var(--color2);
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sidebar-menu .app-title{
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--color5);
+
+    
+}
+
+.sidebar-menu .list-container{
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menu .list-container .task-list a{
+    padding: 1rem 0;
+    width: 100%;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sidebar-menu .list-container .task-list a .material-symbols-rounded {
+    font-size: 2rem;
+    color: var(--color6);
+}
+.sidebar-menu .list-container .task-list a .active{
+    color: var(--purple);
+}
+
+.sidebar-menu .list-container .task-list a .title-btn-list {
+    color: var(--color10);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
