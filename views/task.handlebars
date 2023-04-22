@@ -1,1 +1,20 @@
-<h1>Rodou</h1>
+<div class="task-container p-1">
+    <div class="title-task">
+        <h1>Tarefas Fatec</h1>
+    </div>
+    <div class="add-container">
+        <form action="get" class="task-item">
+            <button class="task-btn">
+                <span class="material-symbols-rounded">add</span>
+            </button>
+            <input class="title-task" type="text" placeholder="Adicionar Tarefa">
+            {{!-- <textarea name="desc-task" id="desc-task" cols="30" rows="1"></textarea> --}}
+        </form>
+    </div>
+    <ul class="task-list">
+        <li class="task-item">
+            <button class="task-btn"></button>
+            <span class="title-task">Task 1</span>
+        </li>
+    </ul>
+</div>

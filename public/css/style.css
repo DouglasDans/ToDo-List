@@ -91,6 +91,58 @@ body{
 
 /* MAIN */
 .main-container{
+    min-height: 100vh;
     margin-left: 250px;
     width: calc(100% - 250px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-container{
+    width: 70%;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.task-container .title-task{
+
+}
+
+.task-container .task-item{
+    background-color: var(--color2);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.task-container .task-item .task-btn{
+    background-color: var(--purple);
+    color: var(--color1);
+
+    border: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-container .task-item .title-task{
+    background-color: transparent;
+    border: 0;
+    font-weight: 600;
+}
+
+.task-container .task-list {
+    padding: 0;
+    
 }
