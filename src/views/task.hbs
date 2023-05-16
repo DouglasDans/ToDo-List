@@ -1,6 +1,6 @@
 <div class="task-container p-1">
     <div class="title-task">
-        <h1>Tarefas Fatec</h1>
+        <h1>Todo List</h1>
     </div>
     <div class="add-container">
         <form action="get" class="task-item">
@@ -11,9 +11,23 @@
             {{!-- <textarea name="desc-task" id="desc-task" cols="30" rows="1"></textarea> --}}
         </form>
     </div>
-    <ul class="task-list">
+    <ul class="task-list" id="task-pendentes">
+        <h5>Pendentes</h5>
         <li class="task-item">
-            <button class="task-btn"></button>
+            <a href="">
+                <button class="task-btn"></button>
+            </a>
+            <span class="title-task">Task 1</span>
+        </li>
+    </ul>
+    <ul class="task-list" id="task-concluidos">
+        <h5>Concluídos</h5>
+        <li class="task-item">
+            <a href="">
+                <button class="task-btn">
+                    <span class="material-symbols-rounded">done</span>
+                </button>
+            </a>
             <span class="title-task">Task 1</span>
         </li>
     </ul>
