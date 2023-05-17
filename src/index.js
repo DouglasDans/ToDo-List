@@ -1,4 +1,5 @@
-const express = require("express")
+const express = require("express");
+const { listaTarefas } = require("./services/firebase");
 const handlebars = require("express-handlebars").engine
 
 const app = express()
@@ -17,7 +18,15 @@ app.engine(pageExtensao, handlebars({defaultLayout: "main"}))
 app.set("view engine" , pageExtensao)
 
 app.get("/", function(req, res) {
-    res.render("task",)
+    listaTarefas.get()
+    .then((data) => {
+        const arr = []
+        data.forEach(item => {
+            arr.push(item.data())
+        })
+        console.log(arr);
+        res.render("task", {data : arr} )
+    })   
 })
 
 app.listen(portaRede, function(){

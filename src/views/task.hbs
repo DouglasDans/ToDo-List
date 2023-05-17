@@ -13,12 +13,14 @@
     </div>
     <ul class="task-list" id="task-pendentes">
         <h5>Pendentes</h5>
+        {{#each data}}
         <li class="task-item">
             <a href="">
                 <button class="task-btn"></button>
             </a>
-            <span class="title-task">Task 1</span>
+            <span class="title-task">{{titulo}}</span>
         </li>
+        {{/each}}
     </ul>
     <ul class="task-list" id="task-concluidos">
         <h5>Concluídos</h5>
